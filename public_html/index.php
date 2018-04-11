@@ -21,5 +21,5 @@ if (empty($handler)) {
 echo ossn_load_page($handler, $page);
 */
 echo "Site working";
-//phpinfo();
+phpinfo();
 ?>
