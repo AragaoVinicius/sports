@@ -18,4 +18,7 @@ $page = input('p');
 if (empty($handler)) {
     $handler = 'index';
 }
-echo ossn_load_page($handler, $page);
+//echo ossn_load_page($handler, $page);
+echo "Site working";
+phpinfo();
+?>
