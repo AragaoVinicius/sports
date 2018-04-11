@@ -9,6 +9,6 @@
  * @link      https://www.opensource-socialnetwork.org/
  */
 
-$Ossn->url = 'https://sportslovers.000webhostapp.com/';
-$Ossn->userdata = '/storage/ssd1/494/5368494/ossn_data/';
+$Ossn->url = 'https://sports000.herokuapp.com/public_html/';
+$Ossn->userdata = '/ossn_data/';
 
