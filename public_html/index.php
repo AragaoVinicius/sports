@@ -8,7 +8,7 @@
  * @license   Open Source Social Network License (OSSN LICENSE)  http://www.opensource-socialnetwork.org/licence
  * @link      https://www.opensource-socialnetwork.org/
  */
-//require_once('system/start.php');
+/*require_once('system/start.php');
 //page handler
 $handler = input('h');
 //page name
@@ -18,7 +18,8 @@ $page = input('p');
 if (empty($handler)) {
     $handler = 'index';
 }
-//echo ossn_load_page($handler, $page);
+echo ossn_load_page($handler, $page);
+*/
 echo "Site working";
-phpinfo();
+//phpinfo();
 ?>
