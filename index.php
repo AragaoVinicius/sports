@@ -1,4 +1,4 @@
 <?php 
-$newURL="/ossn/index.php";
+$newURL="/public_html/index.php";
 header('Location: '.$newURL);
 ?>
