@@ -98,7 +98,7 @@ function ossn_database_settings() {
     );
     return arrayObject($defaults);
 }
-ossn_database_settings
+//ossn_database_settings
 
 /**
  * Get version package file
