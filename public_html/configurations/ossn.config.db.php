@@ -23,4 +23,4 @@ $Ossn->user = 'heroku_q2t9kgnx';
 $Ossn->password = 'pgllmpkq03eh2sts161v6qumes';
 
 // replace id5368494_sp with your database name;
-$Ossn->database = 'hmongodb';
+$Ossn->database = 'heroku_q2t9kgnx';
