@@ -22,9 +22,10 @@ if (!is_file(ossn_route()->configs . 'ossn.config.site.php') && !is_file(ossn_ro
 	exit;
 }
 include_once(ossn_route()->configs . 'libraries.php');
-/**
-include_once(ossn_route()->configs . 'classes.php');
 
+
+include_once(ossn_route()->configs . 'classes.php');
+/**
 include_once(ossn_route()->configs . 'ossn.config.site.php');
 include_once(ossn_route()->configs . 'ossn.config.db.php');
 
