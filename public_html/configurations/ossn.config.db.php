@@ -11,16 +11,16 @@
 
 
 // replace localhost with your database host name;
-$Ossn->host = 'ds137089.mlab.com';
+$Ossn->host = 'ds247439.mlab.com';
 
 // replace 3306 with your database host name;
-$Ossn->port = '37089';
+$Ossn->port = '47439';
 
 // replace id5368494_sportslovers with your database username;
-$Ossn->user = 'heroku_q2t9kgnx';
+$Ossn->user = 'heroku_rzqpjtnr';
 
 // replace dublin2018 with your database password;
-$Ossn->password = 'pgllmpkq03eh2sts161v6qumes';
+$Ossn->password = 'ab8ercsgutrq2jjh4is3lumvqe';
 
 // replace id5368494_sp with your database name;
-$Ossn->database = 'heroku_q2t9kgnx';
+$Ossn->database = 'heroku_rzqpjtnr';
