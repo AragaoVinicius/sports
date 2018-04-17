@@ -560,6 +560,4 @@ class OssnComponents extends OssnDatabase {
 		
 } //class
 
-echo "OssnComponents OK";
-?>
 
