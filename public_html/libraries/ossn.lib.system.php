@@ -83,7 +83,7 @@ function ossn_get_userdata($extend = '') {
  *
  * @return object
  */
-/**
+
 function ossn_database_settings() {
     global $Ossn;
 	if(!isset($Ossn->port)){
@@ -99,7 +99,7 @@ function ossn_database_settings() {
     return arrayObject($defaults);
 }
 ossn_database_settings
-*/
+
 /**
  * Get version package file
  *
