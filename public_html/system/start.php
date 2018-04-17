@@ -21,7 +21,7 @@ if (!is_file(ossn_route()->configs . 'ossn.config.site.php') && !is_file(ossn_ro
     header("Location: installation");
 	exit;
 }
-/**
+
 include_once(ossn_route()->configs . 'libraries.php');
 
 
@@ -40,7 +40,7 @@ foreach ($Ossn->libraries as $lib) {
         throw new exception('Cannot include all libraries');
     }
 }
-*/
+
 ossn_trigger_callback('ossn', 'init');
 //need to update user last_action 
 // @note why its here?
