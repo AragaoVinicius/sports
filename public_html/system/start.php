@@ -30,13 +30,13 @@ include_once(ossn_route()->configs . 'classes.php');
 include_once(ossn_route()->configs . 'ossn.config.site.php');
 
 include_once(ossn_route()->configs . 'ossn.config.db.php');
-
+/**
 foreach ($Ossn->classes as $class) {
     if (!include_once(ossn_route()->classes . "Ossn{$class}.php")) {
         throw new exception('Cannot include all classes');
     }
 }
-/**
+ */
 foreach ($Ossn->libraries as $lib) {
     if (!include_once(ossn_route()->libs . "ossn.lib.{$lib}.php")) {
         throw new exception('Cannot include all libraries');
@@ -47,6 +47,6 @@ ossn_trigger_callback('ossn', 'init');
 //need to update user last_action 
 // @note why its here?
 update_last_activity();
- */
+
 echo "Site working";
 ?>
