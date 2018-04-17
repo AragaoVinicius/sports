@@ -81,5 +81,3 @@ class OssnBase extends OssnSession {
 		}
 } //CLASS
 
-echo "OssnBase OK";
-?>
