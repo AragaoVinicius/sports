@@ -496,5 +496,5 @@ class OssnAnnotation extends OssnEntities {
 				return false;
 		}
 } //class
-echo "Site working";
+echo "OssnAnnotation OK";
 ?>
