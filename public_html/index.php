@@ -13,13 +13,13 @@ require_once('system/start.php');
 $handler = input('h');
 //page name
 $page = input('p');
-/*
+
 //check if there is no handler then load index page handler
 if (empty($handler)) {
     $handler = 'index';
 }
 echo ossn_load_page($handler, $page);
-*/
+
 echo "Site working";
 phpinfo();
 ?>
