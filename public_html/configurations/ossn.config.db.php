@@ -11,16 +11,16 @@
 
 
 // replace localhost with your database host name;
-$Ossn->host = 'localhost';
+$Ossn->host = 'ds137089.mlab.com';
 
 // replace 3306 with your database host name;
-$Ossn->port = '3306';
+$Ossn->port = '37089';
 
 // replace id5368494_sportslovers with your database username;
-$Ossn->user = 'id5368494_sportslovers';
+$Ossn->user = 'heroku_q2t9kgnx';
 
 // replace dublin2018 with your database password;
-$Ossn->password = 'dublin2018';
+$Ossn->password = 'pgllmpkq03eh2sts161v6qumes';
 
 // replace id5368494_sp with your database name;
-$Ossn->database = 'id5368494_sp';
+$Ossn->database = 'hmongodb';
