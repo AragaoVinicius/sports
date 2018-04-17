@@ -20,8 +20,11 @@ class OssnDatabase extends OssnBase {
 				$connect  = new mysqli($settings->host, $settings->user, $settings->password, $settings->database, $settings->port);
 				if(!$connect->connect_errno) {
 						return $connect;
+						echo "CONNECTION DATA BASE OK";
 				} else {
-						return false;
+						return false;	
+						echo "ERROR CONNECTION DATA BASE";
+
 				}
 		}
 		/**
