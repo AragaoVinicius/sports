@@ -11,16 +11,25 @@
 
 
 // replace localhost with your database host name;
-$Ossn->host = 'ds247439.mlab.com';
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
+
+//$conn = new mysqli($server, $username, $password, $db);
+
+$Ossn->host = $server;
 
 // replace 3306 with your database host name;
-$Ossn->port = '47439';
+$Ossn->port = '3306';
 
 // replace id5368494_sportslovers with your database username;
-$Ossn->user = 'heroku_rzqpjtnr';
+$Ossn->user = $username;
 
 // replace dublin2018 with your database password;
-$Ossn->password = 'ab8ercsgutrq2jjh4is3lumvqe';
+$Ossn->password = $password;
 
 // replace id5368494_sp with your database name;
-$Ossn->database = 'heroku_rzqpjtnr';
+$Ossn->database = $db;
