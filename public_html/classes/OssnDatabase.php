@@ -73,6 +73,7 @@ class OssnDatabase extends OssnBase {
 				if(!isset($Ossn->dbLINK) || isset($Ossn->dbLINK) && $Ossn->dbLINK == false){
 					$Ossn->dbLINK = $this->Connect();
 				}
+			error_log("Here");
 				$this->database = $Ossn->dbLINK;
 				if(isset($this->query) && !empty($this->query)) {
 						$this->database->set_charset("utf8");
