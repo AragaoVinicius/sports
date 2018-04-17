@@ -36,7 +36,7 @@ foreach ($Ossn->classes as $class) {
         throw new exception('Cannot include all classes');
     }
 }
-
+/**
 foreach ($Ossn->libraries as $lib) {
     if (!include_once(ossn_route()->libs . "ossn.lib.{$lib}.php")) {
         throw new exception('Cannot include all libraries');
@@ -47,6 +47,6 @@ ossn_trigger_callback('ossn', 'init');
 //need to update user last_action 
 // @note why its here?
 update_last_activity();
- 
+ */
 echo "Site working";
 ?>
