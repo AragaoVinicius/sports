@@ -16,12 +16,12 @@ if (!isset($Ossn)) {
 }
 
 include_once(dirname(dirname(__FILE__)) . '/libraries/ossn.lib.route.php');
-/*
+
 if (!is_file(ossn_route()->configs . 'ossn.config.site.php') && !is_file(ossn_route()->configs . 'ossn.config.db.php')) {
     header("Location: installation");
 	exit;
 }
-
+/*
 include_once(ossn_route()->configs . 'libraries.php');
 
 
