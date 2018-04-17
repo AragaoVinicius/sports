@@ -44,10 +44,10 @@ foreach ($Ossn->libraries as $lib) {
 }
 
 ossn_trigger_callback('ossn', 'init');
- */
+
 //need to update user last_action 
 // @note why its here?
 update_last_activity();
-
+ */
 echo "Site working";
 ?>
