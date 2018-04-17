@@ -9,7 +9,7 @@
  * @link      https://www.opensource-socialnetwork.org/
  */
 require_once('system/start.php');
-/*//page handler
+//page handler
 $handler = input('h');
 //page name
 $page = input('p');
