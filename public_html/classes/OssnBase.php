@@ -80,3 +80,6 @@ class OssnBase extends OssnSession {
 				return $hooked->return;
 		}
 } //CLASS
+
+echo "OssnBase OK";
+?>
