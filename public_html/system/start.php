@@ -21,14 +21,9 @@ if (!is_file(ossn_route()->configs . 'ossn.config.site.php') && !is_file(ossn_ro
     header("Location: installation");
 	exit;
 }
-
 include_once(ossn_route()->configs . 'libraries.php');
-
-
 include_once(ossn_route()->configs . 'classes.php');
-
 include_once(ossn_route()->configs . 'ossn.config.site.php');
-
 include_once(ossn_route()->configs . 'ossn.config.db.php');
 
 foreach ($Ossn->classes as $class) {
@@ -36,19 +31,12 @@ foreach ($Ossn->classes as $class) {
         throw new exception('Cannot include all classes');
     }
 }
-
 foreach ($Ossn->libraries as $lib) {
- 	error_log("loading.lib".$lib);
     if (!include_once(ossn_route()->libs . "ossn.lib.{$lib}.php")) {
         throw new exception('Cannot include all libraries');
     }
 }
-
 ossn_trigger_callback('ossn', 'init');
-
 //need to update user last_action 
 // @note why its here?
 update_last_activity();
-
-echo "Site working";
-?>
