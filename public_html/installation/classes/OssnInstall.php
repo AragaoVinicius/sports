@@ -113,7 +113,7 @@ class OssnInstallation {
 				if(preg_match('/apache/i', $_SERVER["SERVER_SOFTWARE"]) || preg_match('/LiteSpeed/i', $_SERVER["SERVER_SOFTWARE"])) {
 						return true;
 				}
-				return false;
+				return true;
 		}
 		
 		/**

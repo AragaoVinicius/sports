@@ -1,0 +1,6 @@
+---
+- name: Folder permission
+  file: path={{ configs.vm_path }} state=directory mode=0777
+  become: yes
+  become_method: sudo
+

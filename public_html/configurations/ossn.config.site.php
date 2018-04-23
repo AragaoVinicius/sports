@@ -9,6 +9,6 @@
  * @link      https://www.opensource-socialnetwork.org/
  */
 
-$Ossn->url = 'https://sports000.herokuapp.com/public_html/';
-$Ossn->userdata = '/ossn_data/';
+$Ossn->url = 'http://sports.aragaovinicius.develop/';
+$Ossn->userdata = '/var/www/sports.aragaovinicius.dev/ossn_data/';
 
