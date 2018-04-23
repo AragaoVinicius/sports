@@ -83,7 +83,6 @@ function ossn_get_userdata($extend = '') {
  *
  * @return object
  */
-
 function ossn_database_settings() {
     global $Ossn;
 	if(!isset($Ossn->port)){
@@ -98,7 +97,6 @@ function ossn_database_settings() {
     );
     return arrayObject($defaults);
 }
-//ossn_database_settings
 
 /**
  * Get version package file
@@ -108,7 +106,7 @@ function ossn_database_settings() {
 function ossn_package_information() {
     return simplexml_load_file(ossn_route()->www . 'opensource-socialnetwork.xml');
 }
-error_log("System:111");
+
 /**
  * Add a hook to system, hooks are usefull for callback returns
  *
@@ -233,7 +231,6 @@ function ossn_call_hook($hook, $type, $params = null, $returnvalue = null) {
 
     return $returnvalue;
 }
-error_log("System:236");
 
 /**
  * Trigger a callback
@@ -392,7 +389,6 @@ function redirect($new = '') {
 		exit;
 	}
 }
-error_log("System:395");
 
 /**
  * Get default access types
@@ -477,7 +473,6 @@ function strl($str, $limit = NULL, $dots = true) {
     }
     return false;
 }
-error_log("System:480");
 
 /**
  * Update site settings
@@ -610,7 +605,6 @@ function ossn_display_system_messages() {
         return implode('', $ms);
     }
 }
-error_log("System:613");
 
 /**
  * Count total themes
@@ -712,7 +706,6 @@ function ossn_string_encrypt($string = '', $key = '') {
 	$string = utf8_encode($string);
     return mcrypt_encrypt(MCRYPT_BLOWFISH, $key, $string, MCRYPT_MODE_ECB, $mcgetvi);
 }
-error_log("System:715");
 
 /**
  * Ossn decrypt string
@@ -855,7 +848,6 @@ function ossn_set_ajax_data(array $data = array()){
 		$Ossn->ajaxData = $data;
 	}
 }
-error_log("System:858");
 /**
  * Generate .htaccess file
  *
@@ -908,11 +900,6 @@ function ossn_offset_validate(){
 		unset($_REQUEST['offset']);
 	}
 }
-error_log("System:errros");
 ossn_errros();
-
-error_log("System:register init");
 ossn_register_callback('ossn', 'init', 'ossn_offset_validate');
-error_log("System:");
-
 ossn_register_callback('ossn', 'init', 'ossn_system');
