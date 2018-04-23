@@ -77,6 +77,3 @@ function ossn_action($action) {
         ossn_error_page();
     }
 }
-
-echo "ossn.lib.actions";
-?>
